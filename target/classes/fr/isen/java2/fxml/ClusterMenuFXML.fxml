@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@css/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.isen.java2.fxml.ClusterMenuController">
+    <children>
+
+        <Label fx:id="title" layoutX="197.0" layoutY="14.0" />
+        <TableView fx:id="contactTable" layoutX="40.0" layoutY="80.0" minHeight="800.0" minWidth="520.0" prefHeight="888.0" prefWidth="520.0" />
+        <MenuBar fx:id="menuBar" layoutY="-1.0" prefHeight="30.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addGroupLaunch" text="Add Group" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="See">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#personListLaunch" text="Contacts" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+    </children>
+</AnchorPane>
